@@ -164,8 +164,8 @@ function ServicesPage() {
         key={service.name}
         onClick={() => servicesFilter(service.name)}
         className={`${
-          selected.name === service.name ? "bg-blue-400 p-1 rounded" : ""
-        } mx-6 my-2 focus:outline-none`}
+          selected.name === service.name ? "bg-blue-400 p-2" : ""
+        } mx-6 my-2 p-1 focus:outline-none hover:bg-blue-300 rounded transition-colors ease-in-out duration-300`}
       >
         {service.name}
       </button>
@@ -178,23 +178,21 @@ function ServicesPage() {
         <div className="p-4 overflow-auto text-white whitespace-no-wrap bg-blue-600 rounded-lg md:flex-wrap">
           {nameMap()}
         </div>
-        {selected && (
-          <div className="my-4 md:text-xl">
-            <div className="w-20 h-20 mx-auto my-6">
-              <Img fluid={selected.icon} />
-            </div>
-            <h1>{selected.intro}</h1>
-            {selected.sections.map((section) => {
-              const { title, text } = section;
-              return (
-                <div key={title} className="my-4">
-                  <h2 className="mx-auto text-blue-400 uppercase">{title}</h2>
-                  <p>{text}</p>
-                </div>
-              );
-            })}
+        <div className="my-16 text-justify md:text-xl">
+          <div className="w-20 h-20 mx-auto my-6">
+            <Img fluid={selected.icon} />
           </div>
-        )}
+          <h1>{selected.intro}</h1>
+          {selected.sections.map((section) => {
+            const { title, text } = section;
+            return (
+              <div key={title} className="my-4">
+                <h2 className="mx-auto text-blue-400 uppercase">{title}</h2>
+                <p>{text}</p>
+              </div>
+            );
+          })}
+        </div>
       </section>
     </Layout>
   );

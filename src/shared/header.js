@@ -27,21 +27,23 @@ export default function Header() {
     },
     {
       route: `https://d1.patientconnect365.com/Portal/1ed5a0921e0744e5b30d9524c83509ef/PatientReviews`,
-      title: `Reviews`,
+      title: `PatientConnect`,
     },
   ];
 
   const routesMap = () => {
     return routes.map((link) => {
-      let style = "block mx-6 mt-4 md:inline-block md:mt-0 md:ml-6";
+      let style =
+        "block mx-6 mt-4 p-1 rounded md:inline-block md:mt-0 md:ml-6 hover:bg-blue-300 transition-colors ease-in-out duration-300";
 
       return link.route.charAt(0) === "/" ? (
         <AniLink
           key={link.title}
           to={link.route}
-          cover
-          bg="rgb(0, 118, 194)"
-          duration={0.75}
+          paintDrip
+          hex="0076c2"
+          duration={0.5}
+          activeClassName="active"
           className={style}
         >
           {link.title}
@@ -65,10 +67,11 @@ export default function Header() {
       <div className="flex flex-wrap justify-between w-full">
         <AniLink
           to="/"
-          cover
-          bg="rgb(0, 118, 194)"
-          duration={0.75}
-          className="flex items-center"
+          paintDrip
+          hex="0076c2"
+          activeClassName="active"
+          duration={0.5}
+          className="flex items-center p-1 pr-2 transition-colors duration-300 ease-in-out rounded hover:bg-blue-300"
         >
           <FaTooth className="w-5 h-5 mx-2" />
           {site.siteMetadata.title}
