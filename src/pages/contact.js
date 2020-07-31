@@ -46,7 +46,7 @@ function ContactPage() {
               <li>313 Park Ave</li>
               <li>Suite 101</li>
               <li>Falls Church, VA 22046</li>
-              <li>(703) 493-1243</li>
+              <li>(703)534-3177</li>
             </ul>
             <ul className="px-4 py-2 my-6 text-xl text-center text-white bg-blue-400 rounded md:py-12">
               <h2>Business Hours</h2>
