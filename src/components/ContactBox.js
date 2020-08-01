@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function ContactBox(props) {
+export default function ContactBox() {
   const schedule = [
     { day: `Monday:`, hours: `9 AM to 5 PM` },
     { day: `Tuesday:`, hours: `9 AM to 5 PM` },
