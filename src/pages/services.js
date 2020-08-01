@@ -3,7 +3,7 @@ import { useStaticQuery, graphql } from "gatsby";
 import Img from "gatsby-image";
 
 import Layout from "../shared/layout";
-import ContactBox from "../components/ContactBox";
+import ContactBox from "../components/contactBox";
 
 function ServicesPage() {
   const iconQuery = useStaticQuery(graphql`
@@ -194,7 +194,7 @@ function ServicesPage() {
               );
             })}
           </div>
-          <ContactBox style="flex justify-center h-1/4" />
+          <ContactBox />
         </div>
       </section>
     </Layout>
