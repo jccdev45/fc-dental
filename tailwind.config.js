@@ -13,6 +13,9 @@ module.exports = {
       },
     },
   },
-  variants: {},
+  variants: {
+    margin: ['first', 'last', 'responsive'],
+    transition: ['active', 'hover', 'focus']
+  },
   plugins: [require("@tailwindcss/custom-forms")],
 };

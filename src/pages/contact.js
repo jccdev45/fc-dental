@@ -1,6 +1,7 @@
 import React, { useState, useRef } from "react";
 import { navigate } from "gatsby";
 import Layout from "../shared/layout";
+import ContactBox from "../components/contactBox";
 
 function ContactPage() {
   const [state, setContactState] = useState({});
@@ -38,47 +39,12 @@ function ContactPage() {
 
   return (
     <Layout>
-      <section className="flex flex-col mx-6 mt-32">
+      <section className="flex flex-col mx-4 mt-24 md:mt-32">
         <div className="flex flex-col items-center justify-around md:flex-row">
           <div className="flex flex-col md:w-1/4">
-            <ul className="px-4 py-2 my-6 text-2xl text-center text-white bg-blue-400 rounded md:py-12">
-              <li>Dr. Albert M. Boyce, DDS</li>
-              <li>313 Park Ave</li>
-              <li>Suite 101</li>
-              <li>Falls Church, VA 22046</li>
-              <li>(703)534-3177</li>
-            </ul>
-            <ul className="px-4 py-2 my-6 text-xl text-center text-white bg-blue-400 rounded md:py-12">
-              <h2>Business Hours</h2>
-              <li className="flex justify-between">
-                <span className="font-bold">Monday:</span>{" "}
-                <span>9 AM to 5 PM</span>
-              </li>
-              <li className="flex justify-between">
-                <span className="font-bold">Tuesday:</span>{" "}
-                <span>9 AM to 5 PM</span>
-              </li>
-              <li className="flex justify-between">
-                <span className="font-bold">Wednesday:</span>{" "}
-                <span>9 AM to 5 PM</span>
-              </li>
-              <li className="flex justify-between">
-                <span className="font-bold">Thursday:</span>{" "}
-                <span>9 AM to 5 PM</span>
-              </li>
-              <li className="flex justify-between">
-                <span className="font-bold">Friday:</span>{" "}
-                <span>9 AM to 1 PM</span>
-              </li>
-              <li className="flex justify-between">
-                <span className="font-bold">Saturday:</span> <span>Closed</span>
-              </li>
-              <li className="flex justify-between">
-                <span className="font-bold">Sunday:</span> <span>Closed</span>
-              </li>
-            </ul>
+            <ContactBox />
           </div>
-          <div className="flex flex-col md:w-1/2">
+          <div className="flex flex-col w-full p-2 mb-2 rounded-lg shadow-lg md:w-1/2">
             <h1 className="mx-auto text-3xl">Contact Us</h1>
             <form
               className="my-10"
@@ -137,12 +103,14 @@ function ContactPage() {
                 />
               </label>
 
-              <button
-                className="px-4 py-2 text-sm font-bold text-white bg-blue-500 rounded shadow hover:border-blue-600 hover:bg-blue-600"
-                type="submit"
-              >
-                Submit
-              </button>
+              <span style={{ display: `grid`, placeItems: `center` }}>
+                <button
+                  className="px-4 py-2 text-sm font-bold text-white bg-blue-500 rounded shadow hover:border-blue-600 hover:bg-blue-600"
+                  type="submit"
+                >
+                  Submit
+                </button>
+              </span>
             </form>
           </div>
         </div>

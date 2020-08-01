@@ -58,14 +58,7 @@ export default function Home() {
     {
       icon: iconQuery.services.childImageSharp.fluid,
       leading: `Depend on the qualified services...`,
-      body: `might feel a little frightened at the prospect of visiting a
-      dentist’s office, but we promise to provide you with a relaxing
-      atmosphere, and comfortable care in order to take your mind off
-      your worries. Our highly trained staff is friendly, and devoted to
-      your comfort. Our company is family owned and operated, and all of
-      our staff members are fully licensed and insured. We benefit from
-      37 years of practicing in Falls Church, so please let us use what
-      we’ve learned to help you keep your teeth and gums healthy.`,
+      body: `of a Falls Church, VA, dentist from Dr. Albert M. Boyce, DDS today. We are members of the American Dental Association, and we also work with a team of periodontists in the same office. For more information on how we can help you strengthen your smile, contact our Falls Church, VA, office and speak with one of our knowledgeable staff members.`,
     },
   ];
 
@@ -73,7 +66,7 @@ export default function Home() {
     return info.map((item) => (
       <div
         key={item.leading}
-        className="p-6 m-6 bg-blue-400 rounded-lg md:w-1/3 md:m-10"
+        className="p-6 m-6 bg-blue-400 rounded-lg shadow-xl md:w-1/3 md:m-10"
       >
         <div className="w-16 h-16 mx-auto tooltip">
           <span className="-mt-10 -ml-40 text-white bg-blue-300 rounded tooltip-text">
