@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
 import { navigate } from "gatsby";
 import Layout from "../shared/layout";
-import ContactBox from "../components/contactBox";
+import ContactBox from "../components/kahntact";
 
 function ContactPage() {
   const [state, setContactState] = useState({});
