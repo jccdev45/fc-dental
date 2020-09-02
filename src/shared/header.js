@@ -34,7 +34,7 @@ export default function Header() {
   const routesMap = () => {
     return routes.map((link) => {
       let style =
-        "block mx-6 mt-4 p-1 rounded md:inline-block md:mt-0 md:ml-6 hover:bg-blue-300 transition-colors ease-in-out duration-300";
+        "block mx-6 mt-4 p-2 rounded md:inline-block md:mt-0 md:ml-6 hover:bg-blue-300 transition-colors ease-in-out duration-300";
 
       return link.route.charAt(0) === "/" ? (
         <AniLink
@@ -98,7 +98,7 @@ export default function Header() {
         <nav
           className={`${
             expanded ? `block` : `hidden`
-          } md:flex w-full md:w-auto md:items-center mt-4 border-t-2 border-white md:border-none`}
+          } md:flex w-full md:w-auto md:items-center mt-4 md:mt-0 border-t-2 border-white md:border-none`}
         >
           {routesMap()}
         </nav>

@@ -106,14 +106,14 @@ export default function Home() {
           `dental implants`,
           `dentures`,
           `general dentistry`,
-          `teeth whitening`
+          `teeth whitening`,
         ]}
         title="Home"
       />
 
-      <section className="flex flex-col items-center w-full h-full bg-cover">
+      <section className="flex flex-col items-center h-full">
         <Hero />
-        <div className="flex flex-col text-lg text-center text-white md:text-justify md:flex-row md:flex-wrap md:justify-center">
+        <div className="z-10 flex flex-col text-lg text-center text-white md:text-justify md:flex-row md:flex-wrap md:justify-center">
           {infoMap()}
         </div>
       </section>

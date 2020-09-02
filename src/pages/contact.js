@@ -59,7 +59,7 @@ function ContactPage() {
         title="Contact"
       />
 
-      <section className="flex flex-col mx-4 mt-24 md:mt-32">
+      <section className="flex flex-col h-full mx-4 mt-24 md:mt-32">
         <div className="flex flex-col items-center justify-around md:flex-row">
           <div className="flex flex-col md:w-1/4">
             <ContactBox />

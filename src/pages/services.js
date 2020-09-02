@@ -65,7 +65,7 @@ function ServicesPage() {
     {
       name: `CEREC Dentistry`,
       icon: iconQuery.cerec.childImageSharp.fluid,
-      intro: `Some people avoid cosmetic dental work because they don't have the time for repeat appointments. But thanks to our CEREC services, a new and improved smile can soon be yours. All it takes is a single visit to our convenient Falls Church, VA office.`,
+      intro: `Some people avoid cosmetic dental work because they don't have the time for repeat appointments but thanks to our CEREC services, a new and improved smile can soon be yours. All it takes is a single visit to our convenient Falls Church, VA office.`,
       sections: [
         {
           title: `Instant Results`,
