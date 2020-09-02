@@ -2,6 +2,7 @@ import React, { useState, useRef } from "react";
 import { navigate } from "gatsby";
 import Layout from "../shared/layout";
 import ContactBox from "../components/kahntact";
+import SEO from "../shared/seo";
 
 function ContactPage() {
   const [state, setContactState] = useState({});
@@ -39,13 +40,34 @@ function ContactPage() {
 
   return (
     <Layout>
+      <SEO
+        keywords={[
+          `fcdental`,
+          `falls church dental`,
+          `falls church dentist`,
+          `falls church va`,
+          `dr albert m boyce`,
+          `albert m boyce dds`,
+          `cerec dentistry`,
+          `dental bridges`,
+          `dental crowns`,
+          `dental implants`,
+          `dentures`,
+          `general dentistry`,
+          `teeth whitening`,
+        ]}
+        title="Contact"
+      />
+
       <section className="flex flex-col mx-4 mt-24 md:mt-32">
         <div className="flex flex-col items-center justify-around md:flex-row">
           <div className="flex flex-col md:w-1/4">
             <ContactBox />
           </div>
           <div className="flex flex-col w-full p-2 mb-2 rounded-lg shadow-lg md:w-1/2">
-            <h1 className="mx-auto text-3xl">Contact Us</h1>
+            <h1 className="mx-auto text-3xl border-b border-blue-300">
+              Contact Us
+            </h1>
             <form
               className="my-10"
               method="post"
@@ -62,12 +84,12 @@ function ContactPage() {
                 className="block mb-2 text-xs font-bold uppercase"
                 htmlFor="name"
               >
-                Name
+                <span className="border-b border-blue-300">Name</span>
                 <input
                   onChange={handleChange}
                   value={state.name}
                   name="name"
-                  className="w-full mb-6 form-input"
+                  className="w-full mt-2 mb-6 bg-blue-100 form-input"
                   id="name"
                   type="text"
                 />
@@ -77,12 +99,12 @@ function ContactPage() {
                 className="block mb-2 text-xs font-bold uppercase"
                 htmlFor="email"
               >
-                Email
+                <span className="border-b border-blue-300">Email</span>
                 <input
                   onChange={handleChange}
                   value={state.email}
                   name="email"
-                  className="w-full mb-6 form-input"
+                  className="w-full mt-2 mb-6 bg-blue-100 form-input"
                   id="email"
                   type="email"
                 />
@@ -92,12 +114,12 @@ function ContactPage() {
                 className="block mb-2 text-xs font-bold uppercase"
                 htmlFor="message"
               >
-                Message
+                <span className="border-b border-blue-300">Message</span>
                 <textarea
                   onChange={handleChange}
                   value={state.message}
                   name="message"
-                  className="w-full mb-6 form-textarea"
+                  className="w-full mt-2 mb-6 bg-blue-100 form-textarea"
                   id="message"
                   rows="8"
                 />

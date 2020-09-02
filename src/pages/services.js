@@ -4,6 +4,7 @@ import Img from "gatsby-image";
 
 import Layout from "../shared/layout";
 import ContactBox from "../components/kahntact";
+import SEO from "../shared/seo";
 
 function ServicesPage() {
   const iconQuery = useStaticQuery(graphql`
@@ -174,6 +175,25 @@ function ServicesPage() {
 
   return (
     <Layout>
+      <SEO
+        keywords={[
+          `fcdental`,
+          `falls church dental`,
+          `falls church dentist`,
+          `falls church va`,
+          `dr albert m boyce`,
+          `albert m boyce dds`,
+          `cerec dentistry`,
+          `dental bridges`,
+          `dental crowns`,
+          `dental implants`,
+          `dentures`,
+          `general dentistry`,
+          `teeth whitening`,
+        ]}
+        title="Services"
+      />
+
       <section className="h-full mx-8 mt-24 md:my-32 md:mx-20">
         <div className="flex flex-no-wrap justify-between py-4 overflow-auto text-center text-white whitespace-no-wrap bg-blue-600 rounded-lg">
           {nameMap()}

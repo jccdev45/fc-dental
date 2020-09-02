@@ -58,7 +58,7 @@ export default function Home() {
     {
       icon: iconQuery.services.childImageSharp.fluid,
       leading: `Depend on the qualified services...`,
-      body: `of a Falls Church, VA, dentist from Dr. Albert M. Boyce, DDS today. We are members of the American Dental Association, and we also work with a team of periodontists in the same office. For more information on how we can help you strengthen your smile, contact our Falls Church, VA, office and speak with one of our knowledgeable staff members.`,
+      body: `from Dr. Albert M. Boyce, DDS today. We are members of the American Dental Association, and we also work with a team of periodontists in the same office. For more information on how we can help you strengthen your smile, contact our Falls Church, VA, office and speak with one of our knowledgeable staff members.`,
     },
   ];
 
@@ -94,10 +94,19 @@ export default function Home() {
     <Layout>
       <SEO
         keywords={[
-          `falls church dental`,
           `fcdental`,
+          `falls church dental`,
           `falls church dentist`,
-          `dr albert boyce`,
+          `falls church va`,
+          `dr albert m boyce`,
+          `albert m boyce dds`,
+          `cerec dentistry`,
+          `dental bridges`,
+          `dental crowns`,
+          `dental implants`,
+          `dentures`,
+          `general dentistry`,
+          `teeth whitening`
         ]}
         title="Home"
       />

@@ -29,7 +29,7 @@ export default function ContactBox() {
         <li>(703) 534-3177</li>
       </ul>
       <ul className="px-4 py-2 mx-4 my-6 text-xl text-center text-white bg-blue-400 border border-white rounded shadow-lg md:py-8">
-        <h2 className="border-b-2 border-white">Business Hours</h2>
+        <h2 className="text-2xl font-bold border-b-2 border-white">Business Hours</h2>
         {scheduleMap()}
       </ul>
     </div>
