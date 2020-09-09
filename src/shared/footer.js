@@ -11,7 +11,7 @@ export default function Footer() {
       <span className="flex flex-col md:flex-row">
         <span className="mx-1">Design by: </span>
         <a
-          href="https://www.jcc-dev.netlify.app"
+          href="https://www.jccdev.tech"
           target="_blank"
           rel="noreferrer"
           className="text-blue-300 underline hover:text-blue-200"
